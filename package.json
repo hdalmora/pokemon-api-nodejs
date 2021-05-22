@@ -1,0 +1,24 @@
+{
+  "name": "pokemon-api",
+  "version": "1.0.0",
+  "description": "API para armazenamento de informações de pokemons como estudo para a matéria de Programação WEB da FT Unicamp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.18",
+    "morgan": "^1.10.0",
+    "slugify": "^1.4.7",
+    "validator": "^13.5.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
