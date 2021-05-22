@@ -2,13 +2,16 @@
   "name": "pokemon-api",
   "version": "1.0.0",
   "description": "API para armazenamento de informações de pokemons como estudo para a matéria de Programação WEB da FT Unicamp",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js"
   },
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "heroku"
+  ],
+  "author": "Henrique Dal Mora",
+  "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
@@ -20,5 +23,8 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.7"
+  },
+  "engines": {
+    "node": "14.x"
   }
 }
