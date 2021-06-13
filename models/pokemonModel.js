@@ -32,7 +32,7 @@ const pokemonSchema = new mongoose.Schema(
     pokemonImageUrl: {
       type: String,
       required: [true, "A Pokemon must have a image URL"],
-      unique: true,
+      unique: false,
       trim: true,
       minlength: [
         5,
