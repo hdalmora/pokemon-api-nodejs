@@ -44,6 +44,21 @@ const pokemonSchema = new mongoose.Schema(
       required: [true, "A Pokemon must have a strength"],
       unique: false,
       min: [1, "A Pokemon strength must be at least  1"],
+      max: [100, "A Pokemon strength must be at least  100"],
+    },
+    speed: {
+      type: Number,
+      required: [true, "A Pokemon must have a speed"],
+      unique: false,
+      min: [1, "A Pokemon speed must be at least  1"],
+      max: [100, "A Pokemon speed must be at least  100"],
+    },
+    defence: {
+      type: Number,
+      required: [true, "A Pokemon must have a strength"],
+      unique: false,
+      min: [1, "A Pokemon defence must be at least  1"],
+      max: [100, "A Pokemon defence must be at least  100"],
     },
   },
   {
