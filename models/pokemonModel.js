@@ -15,10 +15,29 @@ const pokemonSchema = new mongoose.Schema(
     },
     pokemonType: {
       type: String,
-      enum: ["Bug", "Ghost", "Steel", "Fire"],
+      enum: [
+        "Bug",
+        "Ghost",
+        "Steel",
+        "Fire",
+        "Rock",
+        "Water",
+        "Electric",
+        "Psychic",
+      ],
       default: "Bug",
       unique: false,
       required: [true, "A Pokemon must have a type"],
+    },
+    pokemonImageUrl: {
+      type: String,
+      required: [true, "A Pokemon must have a image URL"],
+      unique: true,
+      trim: true,
+      minlength: [
+        5,
+        "A Pokemon image URL must have more or equal then 5 characters",
+      ],
     },
     strength: {
       type: Number,
