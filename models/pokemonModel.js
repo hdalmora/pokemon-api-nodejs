@@ -55,7 +55,7 @@ const pokemonSchema = new mongoose.Schema(
     },
     defence: {
       type: Number,
-      required: [true, "A Pokemon must have a strength"],
+      required: [true, "A Pokemon must have a defence"],
       unique: false,
       min: [1, "A Pokemon defence must be at least  1"],
       max: [100, "A Pokemon defence must be at least  100"],
